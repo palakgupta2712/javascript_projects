@@ -1,0 +1,49 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    min-height: 600px;
+    border: 1px solid black;
+    padding: 32px;
+    margin: 0 0 3em;
+    border-radius: 10px;
+    background: linear-gradient(160deg, #d7385e 0%, #a6f6f1 100%);
+
+}
+
+.grid i{  
+    height: 125px;
+    width: 125px;
+    background: #132743;
+    font-size: 0; 
+    border-radius: 8px;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid i.open {
+    transform: rotateY(0);
+    background-color: #fcdada;
+    cursor: default;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.grid i.show{
+    font-size: 50px;
+}
+
+.grid i.matched{
+    background-color: #ffa5a5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
